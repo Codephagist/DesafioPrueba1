@@ -2,7 +2,10 @@
 
 ## Cómo trabajar en el repo
 
-Nadie puede subir cambios directo a `main`. Cada persona trabaja en su propia rama (y solo puede subir a la suya) y envía sus cambios con un Pull Request (PR). El owner (@OsvaDev-HUB) revisa y aprueba cada PR antes de unirlo a `main`.
+El repo está en la organización **Codephagist**:
+https://github.com/Codephagist/DesafioPrueba1
+
+Cada integrante tiene su propia rama y **solo puede subir cambios a la suya**. Nadie puede subir directo a `main`: todo se envía con un Pull Request (PR) y el owner (@OsvaDev-HUB) lo revisa antes de unirlo.
 
 ### Ramas de cada integrante
 
@@ -12,22 +15,33 @@ Nadie puede subir cambios directo a `main`. Cada persona trabaja en su propia ra
 | otrolemao | `dev/otrolemao` |
 | Xunork | `dev/Xunork` |
 
-### 1. Aceptar la invitación (solo la primera vez)
+### 1. Clonar el repo
 
-Entra a https://github.com/Codephagist/DesafioPrueba1/invitations y acepta.
+Si ya lo habías clonado antes de que se moviera a la organización, actualiza la URL:
 
-### 2. Clonar el repo y entrar a tu rama (solo la primera vez)
+```bash
+git remote set-url origin https://github.com/Codephagist/DesafioPrueba1.git
+git fetch origin
+```
+
+Si todavía no lo clonas:
 
 ```bash
 git clone https://github.com/Codephagist/DesafioPrueba1.git
 cd DesafioPrueba1
+```
+
+### 2. Entrar a tu rama
+
+Cambia `TU_USUARIO` por tu usuario de GitHub:
+
+```bash
 git checkout dev/TU_USUARIO
 ```
 
 ### 3. Antes de empezar a trabajar, traer lo último de main
 
 ```bash
-git checkout dev/TU_USUARIO
 git pull origin main
 ```
 
@@ -40,7 +54,7 @@ git commit -m "feat: Se agrega el formulario de login"
 
 Usa un prefijo en el mensaje: `feat:`, `fix:`, `docs:`, `style:`, `refactor:`.
 
-### 5. Subir tu rama a GitHub
+### 5. Subir tu rama
 
 ```bash
 git push origin dev/TU_USUARIO
@@ -48,16 +62,16 @@ git push origin dev/TU_USUARIO
 
 ### 6. Abrir el Pull Request
 
-- **Opción web:** entra al repo en GitHub y haz clic en el botón verde **"Compare & pull request"**. Revisa que diga `base: main` y `compare: dev/TU_USUARIO`, escribe qué hiciste y envíalo.
-- **Opción terminal** (si tienes `gh` instalado):
+- **Web:** entra al repo y haz clic en **"Compare & pull request"**. Revisa que diga `base: main` y `compare: dev/TU_USUARIO`, escribe qué hiciste y envíalo.
+- **Terminal** (si tienes `gh` instalado):
 
 ```bash
 gh pr create --base main --fill
 ```
 
-### 7. Esperar la revisión
+### 7. Si te piden cambios
 
-Si te piden cambios, hazlos en tu misma rama y vuelve a subir:
+Hazlos en tu misma rama y vuelve a subir:
 
 ```bash
 git add .
@@ -69,10 +83,9 @@ El PR se actualiza solo.
 
 ### 8. Cuando aprueben y unan tu PR
 
-Vuelve al paso 3 para traer lo último de `main` antes de seguir trabajando.
+Vuelve al paso 3 antes de seguir trabajando.
 
 ### Importante
 
-- Nunca trabajes directo en `main`.
-- Trabaja siempre en tu rama `dev/TU_USUARIO`. Solo tú puedes subir cambios a ella.
-- Si `git push` a `main` te da error, es normal: está protegido.
+- Nunca trabajes en `main`.
+- Si `git push` te da error al subir a `main` o a la rama de otro, es normal: están protegidas.
