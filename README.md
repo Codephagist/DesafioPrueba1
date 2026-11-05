@@ -2,7 +2,7 @@
 
 ## Cómo trabajar en el repo
 
-Nadie puede subir cambios directo a `main`. Cada persona trabaja en su propia rama y envía sus cambios con un Pull Request (PR). El owner (@OsvaDev-HUB) revisa y aprueba cada PR antes de unirlo a `main`.
+Nadie puede subir cambios directo a `main`. Cada persona trabaja en su propia rama (y solo puede subir a la suya) y envía sus cambios con un Pull Request (PR). El owner (@OsvaDev-HUB) revisa y aprueba cada PR antes de unirlo a `main`.
 
 ### Ramas de cada integrante
 
@@ -14,12 +14,12 @@ Nadie puede subir cambios directo a `main`. Cada persona trabaja en su propia ra
 
 ### 1. Aceptar la invitación (solo la primera vez)
 
-Entra a https://github.com/OsvaDev-HUB/DesafioPrueba1/invitations y acepta.
+Entra a https://github.com/Codephagist/DesafioPrueba1/invitations y acepta.
 
 ### 2. Clonar el repo y entrar a tu rama (solo la primera vez)
 
 ```bash
-git clone https://github.com/OsvaDev-HUB/DesafioPrueba1.git
+git clone https://github.com/Codephagist/DesafioPrueba1.git
 cd DesafioPrueba1
 git checkout dev/TU_USUARIO
 ```
@@ -74,5 +74,5 @@ Vuelve al paso 3 para traer lo último de `main` antes de seguir trabajando.
 ### Importante
 
 - Nunca trabajes directo en `main`.
-- Trabaja siempre en tu rama `dev/TU_USUARIO`.
+- Trabaja siempre en tu rama `dev/TU_USUARIO`. Solo tú puedes subir cambios a ella.
 - Si `git push` a `main` te da error, es normal: está protegido.
